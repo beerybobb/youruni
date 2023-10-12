@@ -1,0 +1,22 @@
+@use "./mixins" as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 380px;
+  @include sm {
+    max-width: 500px;
+  }
+  @include md {
+    max-width: 700px;
+  }
+  @include lg {
+    max-width: 900px;
+  }
+  @include xl {
+    max-width: var(--max-width);
+  }
+}

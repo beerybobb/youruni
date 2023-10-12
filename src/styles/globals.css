@@ -1,0 +1,27 @@
+:root {
+  --max-width: 1200px;
+  --font-family: Arial, Helvetica, sans-serif;
+  --brand-red: #e16259;
+  --activeLink: solid 2px var(--brand-red);
+  --padding-sm: 20px;
+  --padding-md: 50px;
+  --padding-md: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: var(--font-family);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+

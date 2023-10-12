@@ -1,0 +1,58 @@
+@use "../../styles/mixins" as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--padding-md);
+  padding-bottom: var(--padding-md);
+  @include md {
+    flex-direction: row;
+  }
+}
+.text {
+  max-width: 565px;
+}
+.image {
+  margin-top: var(--padding-md);
+  img {
+    max-width: 384px;
+    width: 100%;
+    height: auto;
+  }
+  @include md{
+    margin-top: 0;
+  }
+  @include lg {
+    margin-left: 90px;
+  }
+  @include xl {
+    margin-left: 125px;
+  }
+}
+.title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: -1.85px;
+  font-size: 45px;
+  @include md {
+    font-size: 62px;
+    line-height: 69px;
+  }
+  @include lg {
+    font-size: 69px;
+  }
+  @include xl {
+    font-size: 69px;
+  }
+}
+.subTitle {
+  color: #000;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 29px */
+}
